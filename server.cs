@@ -15,13 +15,10 @@ namespace TCP_Aplication
             try
             {
                 IPAddress ipAd = IPAddress.Parse("192.168.138.177");
-                // use local m/c IP address, and 
-                // use the same in the client
-
-                /* Initializes the Listener */
+                
                 TcpListener myList = new TcpListener(ipAd, 8001);
 
-                /* Start Listeneting at the specified port */
+               
                 myList.Start();
 
                 Console.WriteLine("The server is running at port 8001...");
@@ -82,7 +79,7 @@ namespace TCP_Aplication
                 ASCIIEncoding asen = new ASCIIEncoding();
                 s.Send(asen.GetBytes("The string was recieved by the server."));
                 
-                /* clean up */
+                
                 s.Close();
                 myList.Stop();
 
