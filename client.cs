@@ -20,7 +20,7 @@ namespace Client
                 Console.WriteLine("Connecting.....");
 
                 tcpclnt.Connect("192.168.138.177", 8001);
-                // use the ipaddress as in the server program
+                
 
                 Console.WriteLine("Connected");
                 Console.Write("Enter Username : ");
